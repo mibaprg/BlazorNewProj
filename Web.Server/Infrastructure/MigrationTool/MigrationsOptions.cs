@@ -1,4 +1,4 @@
-﻿namespace Havit.NewProjectTemplate.Web.Server.Infrastructure.MigrationTool;
+﻿namespace MB.HBlazorApp.Web.Server.Infrastructure.MigrationTool;
 
 public class MigrationsOptions
 {

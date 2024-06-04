@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Components;
 using Microsoft.JSInterop;
 
-namespace Havit.NewProjectTemplate.Web.Client.Pages.Errors;
+namespace MB.HBlazorApp.Web.Client.Pages.Errors;
 
 public partial class GenericError : IAsyncDisposable
 {

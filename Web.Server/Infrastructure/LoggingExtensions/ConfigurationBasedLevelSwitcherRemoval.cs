@@ -1,7 +1,7 @@
 ﻿using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 
-namespace Havit.NewProjectTemplate.Web.Server.Infrastructure.LoggingExtensions;
+namespace MB.HBlazorApp.Web.Server.Infrastructure.LoggingExtensions;
 
 /// <summary>
 /// Modifies logging to File / Azure Blob Storage to ignore the logging level settings in the Azure portal (Error, Warning, Information, Verbose).

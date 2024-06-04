@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication.OpenIdConnect;
 
-namespace Havit.NewProjectTemplate.Web.Server.Infrastructure.Security;
+namespace MB.HBlazorApp.Web.Server.Infrastructure.Security;
 
 // zdroj: https://github.com/dotnet/blazor-samples/tree/main/8.0/BlazorWebAppOidc
 

@@ -1,7 +1,7 @@
-﻿using Havit.NewProjectTemplate.Services.Mailing;
+﻿using MB.HBlazorApp.Services.Mailing;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
 
-namespace Havit.NewProjectTemplate.Services.HealthChecks;
+namespace MB.HBlazorApp.Services.HealthChecks;
 
 public class MailServiceHealthCheck : BaseHealthCheck
 {

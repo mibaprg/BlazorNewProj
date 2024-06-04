@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using Havit.NewProjectTemplate.Primitives.Security;
+using MB.HBlazorApp.Primitives.Security;
 
-namespace Havit.NewProjectTemplate.Model.Security;
+namespace MB.HBlazorApp.Model.Security;
 
 public class User
 {

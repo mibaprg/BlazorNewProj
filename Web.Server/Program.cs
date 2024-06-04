@@ -1,8 +1,8 @@
 ﻿using System.Runtime.InteropServices;
-using Havit.NewProjectTemplate.DependencyInjection.Configuration;
-using Havit.NewProjectTemplate.Web.Server.Infrastructure.LoggingExtensions;
+using MB.HBlazorApp.DependencyInjection.Configuration;
+using MB.HBlazorApp.Web.Server.Infrastructure.LoggingExtensions;
 
-namespace Havit.NewProjectTemplate.Web.Server;
+namespace MB.HBlazorApp.Web.Server;
 
 public static class Program
 {

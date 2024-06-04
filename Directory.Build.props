@@ -1,11 +1,11 @@
 ﻿<Project>
 
 	<PropertyGroup>
-		<Company>HAVIT</Company>
-		<Copyright>Copyright HAVIT, s.r.o.</Copyright>
+		<Company>MiBaPrg</Company>
+		<Copyright>Copyright MiBaPrg, s.r.o.</Copyright>
 		<FileVersion>1.0.0.0</FileVersion>
 		<AssemblyVersion>1.0.0.0</AssemblyVersion>
-		<Product>NewProjectTemplate</Product>
+		<Product>HBlazorApp</Product>
 		<LangVersion>latest</LangVersion>
 		<EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
 		<DisableTransitiveProjectReferences>true</DisableTransitiveProjectReferences>

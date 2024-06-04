@@ -1,8 +1,8 @@
 ﻿using System.Security.Claims;
 using Havit.Extensions.DependencyInjection.Abstractions;
-using Havit.NewProjectTemplate.Primitives.Security;
+using MB.HBlazorApp.Primitives.Security;
 
-namespace Havit.NewProjectTemplate.Services.Infrastructure.Security;
+namespace MB.HBlazorApp.Services.Infrastructure.Security;
 
 [Service(Profile = ServiceProfiles.WebServer)]
 public class ApplicationAuthorizationService : IApplicationAuthorizationService

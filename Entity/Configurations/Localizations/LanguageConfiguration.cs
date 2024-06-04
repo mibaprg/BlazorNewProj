@@ -1,8 +1,8 @@
-﻿using Havit.NewProjectTemplate.Model.Localizations;
+﻿using MB.HBlazorApp.Model.Localizations;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace Havit.NewProjectTemplate.Entity.Configurations.Localizations;
+namespace MB.HBlazorApp.Entity.Configurations.Localizations;
 
 public class LanguageConfiguration : IEntityTypeConfiguration<Language>
 {

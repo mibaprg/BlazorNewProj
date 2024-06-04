@@ -1,6 +1,6 @@
-﻿using Havit.NewProjectTemplate.Primitives.Security;
+﻿using MB.HBlazorApp.Primitives.Security;
 
-namespace Havit.NewProjectTemplate.Services.Infrastructure.Security;
+namespace MB.HBlazorApp.Services.Infrastructure.Security;
 
 public interface IApplicationAuthorizationService
 {

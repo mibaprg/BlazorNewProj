@@ -1,8 +1,8 @@
-﻿using Havit.NewProjectTemplate.Model.Security;
+﻿using MB.HBlazorApp.Model.Security;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace Havit.NewProjectTemplate.Entity.Configurations.Security;
+namespace MB.HBlazorApp.Entity.Configurations.Security;
 
 public class RoleConfiguration : IEntityTypeConfiguration<Role>
 {

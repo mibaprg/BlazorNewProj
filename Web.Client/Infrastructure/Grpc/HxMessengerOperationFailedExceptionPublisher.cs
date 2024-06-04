@@ -1,8 +1,8 @@
 ﻿using Havit.Blazor.Grpc.Client.ServerExceptions;
-using Havit.NewProjectTemplate.Resources;
+using MB.HBlazorApp.Resources;
 using Microsoft.Extensions.Localization;
 
-namespace Havit.NewProjectTemplate.Web.Client.Infrastructure.Grpc;
+namespace MB.HBlazorApp.Web.Client.Infrastructure.Grpc;
 
 public class HxMessengerOperationFailedExceptionGrpcClientListener : IOperationFailedExceptionGrpcClientListener
 {

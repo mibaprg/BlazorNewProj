@@ -1,4 +1,4 @@
-﻿namespace Havit.NewProjectTemplate.DependencyInjection.ConfigurationOptions;
+﻿namespace MB.HBlazorApp.DependencyInjection.ConfigurationOptions;
 
 public class FileStorageOptions
 {

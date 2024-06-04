@@ -1,10 +1,10 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
 		<TargetFramework>net8.0</TargetFramework>
 		<IsPackable>false</IsPackable>
-		<AssemblyName>Havit.NewProjectTemplate.IntegrationTests</AssemblyName>
-		<RootNamespace>Havit.NewProjectTemplate.IntegrationTests</RootNamespace>
+		<AssemblyName>MB.HBlazorApp.IntegrationTests</AssemblyName>
+		<RootNamespace>MB.HBlazorApp.IntegrationTests</RootNamespace>
 		<EnableMSTestRunner>true</EnableMSTestRunner>
 		<OutputType>Exe</OutputType>
 	</PropertyGroup>

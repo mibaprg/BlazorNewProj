@@ -5,15 +5,15 @@ using Havit.Data.EntityFrameworkCore.Patterns.DependencyInjection;
 using Havit.Data.EntityFrameworkCore.Patterns.UnitOfWorks.EntityValidation;
 using Havit.Extensions.DependencyInjection;
 using Havit.Extensions.DependencyInjection.Abstractions;
-using Havit.NewProjectTemplate.DataLayer.DataSources.Common;
-using Havit.NewProjectTemplate.DataLayer.Repositories.Common;
-using Havit.NewProjectTemplate.DependencyInjection.ConfigurationOptions;
-using Havit.NewProjectTemplate.Entity;
-using Havit.NewProjectTemplate.Services.Infrastructure;
-using Havit.NewProjectTemplate.Services.Infrastructure.FileStorages;
-using Havit.NewProjectTemplate.Services.Infrastructure.MigrationTool;
-using Havit.NewProjectTemplate.Services.Jobs;
-using Havit.NewProjectTemplate.Services.TimeServices;
+using MB.HBlazorApp.DataLayer.DataSources.Common;
+using MB.HBlazorApp.DataLayer.Repositories.Common;
+using MB.HBlazorApp.DependencyInjection.ConfigurationOptions;
+using MB.HBlazorApp.Entity;
+using MB.HBlazorApp.Services.Infrastructure;
+using MB.HBlazorApp.Services.Infrastructure.FileStorages;
+using MB.HBlazorApp.Services.Infrastructure.MigrationTool;
+using MB.HBlazorApp.Services.Jobs;
+using MB.HBlazorApp.Services.TimeServices;
 using Havit.Services.Azure.FileStorage;
 using Havit.Services.Caching;
 using Havit.Services.FileStorage;
@@ -23,7 +23,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Havit.NewProjectTemplate.DependencyInjection;
+namespace MB.HBlazorApp.DependencyInjection;
 
 public static class ServiceCollectionExtensions
 {
@@ -117,11 +117,11 @@ public static class ServiceCollectionExtensions
 		services.WithEntityPatternsInstaller()
 			.AddEntityPatterns()
 			//.AddLocalizationServices<Language>()
-			.AddDbContext<NewProjectTemplateDbContext>(optionsBuilder =>
+			.AddDbContext<HBlazorAppDbContext>(optionsBuilder =>
 			{
 				if (configuration.UseInMemoryDb)
 				{
-					optionsBuilder.UseInMemoryDatabase(nameof(NewProjectTemplateDbContext));
+					optionsBuilder.UseInMemoryDatabase(nameof(HBlazorAppDbContext));
 				}
 				else
 				{
@@ -136,7 +136,7 @@ public static class ServiceCollectionExtensions
 
 	private static void InstallHavitServices(IServiceCollection services)
 	{
-		// HAVIT .NET Framework Extensions
+		// MiBaPrg .NET Framework Extensions
 		services.AddSingleton<ITimeService, ApplicationTimeService>();
 		services.AddSingleton<ICacheService, MemoryCacheService>();
 		services.AddSingleton(new MemoryCacheServiceOptions { UseCacheDependenciesSupport = false });
@@ -144,14 +144,14 @@ public static class ServiceCollectionExtensions
 
 	private static void InstallByServiceAttribute(IServiceCollection services, InstallConfiguration configuration)
 	{
-		services.AddByServiceAttribute(typeof(Havit.NewProjectTemplate.DataLayer.Properties.AssemblyInfo).Assembly, configuration.ServiceProfiles);
-		services.AddByServiceAttribute(typeof(Havit.NewProjectTemplate.Services.Properties.AssemblyInfo).Assembly, configuration.ServiceProfiles);
-		services.AddByServiceAttribute(typeof(Havit.NewProjectTemplate.Facades.Properties.AssemblyInfo).Assembly, configuration.ServiceProfiles);
+		services.AddByServiceAttribute(typeof(MB.HBlazorApp.DataLayer.Properties.AssemblyInfo).Assembly, configuration.ServiceProfiles);
+		services.AddByServiceAttribute(typeof(MB.HBlazorApp.Services.Properties.AssemblyInfo).Assembly, configuration.ServiceProfiles);
+		services.AddByServiceAttribute(typeof(MB.HBlazorApp.Facades.Properties.AssemblyInfo).Assembly, configuration.ServiceProfiles);
 	}
 
 	private static void InstallAuthorizationHandlers(IServiceCollection services)
 	{
-		services.Scan(scan => scan.FromAssemblyOf<Havit.NewProjectTemplate.Services.Properties.AssemblyInfo>()
+		services.Scan(scan => scan.FromAssemblyOf<MB.HBlazorApp.Services.Properties.AssemblyInfo>()
 			.AddClasses(classes => classes.AssignableTo<IAuthorizationHandler>())
 			.As<IAuthorizationHandler>()
 			.WithScopedLifetime()

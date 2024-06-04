@@ -1,6 +1,6 @@
 ﻿using MimeKit;
 
-namespace Havit.NewProjectTemplate.Services.Mailing;
+namespace MB.HBlazorApp.Services.Mailing;
 
 public interface IMailingService
 {

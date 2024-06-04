@@ -1,6 +1,6 @@
 ﻿using Havit.Services.FileStorage;
 
-namespace Havit.NewProjectTemplate.Services.Infrastructure.FileStorages;
+namespace MB.HBlazorApp.Services.Infrastructure.FileStorages;
 
 public class ApplicationFileStorage : FileStorageContext
 {

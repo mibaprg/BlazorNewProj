@@ -1,7 +1,7 @@
 ﻿using Havit.Data.Patterns.DataSeeds;
-using Havit.NewProjectTemplate.Model.Localizations;
+using MB.HBlazorApp.Model.Localizations;
 
-namespace Havit.NewProjectTemplate.DataLayer.Seeds.Core.Localizations;
+namespace MB.HBlazorApp.DataLayer.Seeds.Core.Localizations;
 
 public class LanguageSeed : DataSeed<CoreProfile>
 {

@@ -3,14 +3,14 @@ using System.Security.Claims;
 using System.Threading;
 using Havit.Data.Patterns.UnitOfWorks;
 using Havit.Extensions.DependencyInjection.Abstractions;
-using Havit.NewProjectTemplate.Contracts.Infrastructure.Security;
-using Havit.NewProjectTemplate.DataLayer.Repositories.Security;
-using Havit.NewProjectTemplate.Model.Security;
-using Havit.NewProjectTemplate.Primitives.Security;
-using Havit.NewProjectTemplate.Services.Infrastructure;
+using MB.HBlazorApp.Contracts.Infrastructure.Security;
+using MB.HBlazorApp.DataLayer.Repositories.Security;
+using MB.HBlazorApp.Model.Security;
+using MB.HBlazorApp.Primitives.Security;
+using MB.HBlazorApp.Services.Infrastructure;
 using Havit.Services.Caching;
 
-namespace Havit.NewProjectTemplate.Facades.Infrastructure.Security.Claims;
+namespace MB.HBlazorApp.Facades.Infrastructure.Security.Claims;
 
 [Service(Profile = ServiceProfiles.WebServer)]
 public class CustomClaimsBuilder : ICustomClaimsBuilder

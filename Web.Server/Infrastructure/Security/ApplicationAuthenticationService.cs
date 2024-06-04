@@ -1,10 +1,10 @@
 ﻿using System.Security.Claims;
-using Havit.NewProjectTemplate.Contracts.Infrastructure.Security;
-using Havit.NewProjectTemplate.DataLayer.Repositories.Security;
-using Havit.NewProjectTemplate.Model.Security;
-using Havit.NewProjectTemplate.Services.Infrastructure.Security;
+using MB.HBlazorApp.Contracts.Infrastructure.Security;
+using MB.HBlazorApp.DataLayer.Repositories.Security;
+using MB.HBlazorApp.Model.Security;
+using MB.HBlazorApp.Services.Infrastructure.Security;
 
-namespace Havit.NewProjectTemplate.Web.Server.Infrastructure.Security;
+namespace MB.HBlazorApp.Web.Server.Infrastructure.Security;
 
 public class ApplicationAuthenticationService : IApplicationAuthenticationService
 {

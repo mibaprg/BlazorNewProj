@@ -1,7 +1,7 @@
-﻿using Havit.NewProjectTemplate.TestHelpers;
+﻿using MB.HBlazorApp.TestHelpers;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace Havit.NewProjectTemplate.TestsForLocalDebugging;
+namespace MB.HBlazorApp.TestsForLocalDebugging;
 
 public class TestForLocalDebuggingBase : IntegrationTestBase
 {

@@ -1,7 +1,7 @@
 ﻿using Havit.Data.EntityFrameworkCore.Patterns.QueryServices;
-using Havit.NewProjectTemplate.Contracts;
+using MB.HBlazorApp.Contracts;
 
-namespace Havit.NewProjectTemplate.DataLayer;
+namespace MB.HBlazorApp.DataLayer;
 
 public static class DataFragmentExtensions
 {

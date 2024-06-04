@@ -1,4 +1,4 @@
-﻿namespace Havit.NewProjectTemplate.Model.Security;
+﻿namespace MB.HBlazorApp.Model.Security;
 
 public class UserRole
 {

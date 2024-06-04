@@ -1,4 +1,4 @@
-﻿namespace Havit.NewProjectTemplate.Services.Mailing;
+﻿namespace MB.HBlazorApp.Services.Mailing;
 
 public class MailingOptions
 {

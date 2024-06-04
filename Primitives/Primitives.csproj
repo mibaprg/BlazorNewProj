@@ -1,13 +1,24 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
 		<TargetFramework>net8.0</TargetFramework>
-		<AssemblyName>Havit.NewProjectTemplate.Primitives</AssemblyName>
-		<RootNamespace>Havit.NewProjectTemplate.Primitives</RootNamespace>
+		<AssemblyName>MB.HBlazorApp.Primitives</AssemblyName>
+		<RootNamespace>MB.HBlazorApp.Primitives</RootNamespace>
 	</PropertyGroup>
 
 	<ItemGroup>
 		<PackageReference Include="Havit.Core" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <PackageVersion Update="Microsoft.VisualStudio.Threading.Analyzers" Version="17.10.48" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <PackageReference Update="Microsoft.VisualStudio.Threading.Analyzers">
+	    <PrivateAssets>all</PrivateAssets>
+	    <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+	  </PackageReference>
 	</ItemGroup>
 
 </Project>

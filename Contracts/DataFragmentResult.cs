@@ -1,6 +1,6 @@
 ﻿using ProtoBuf;
 
-namespace Havit.NewProjectTemplate.Contracts;
+namespace MB.HBlazorApp.Contracts;
 
 [ProtoContract]
 public class DataFragmentResult<TItem>

@@ -1,8 +1,8 @@
 ﻿using Havit.Data.Patterns.DataSeeds;
-using Havit.NewProjectTemplate.Model.Common;
-using Havit.NewProjectTemplate.Model.Localizations;
+using MB.HBlazorApp.Model.Common;
+using MB.HBlazorApp.Model.Localizations;
 
-namespace Havit.NewProjectTemplate.DataLayer.Seeds.Core.Common;
+namespace MB.HBlazorApp.DataLayer.Seeds.Core.Common;
 
 public class CountrySeed : DataSeed<CoreProfile>
 {

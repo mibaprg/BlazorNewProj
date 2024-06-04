@@ -1,6 +1,6 @@
 ﻿using System.Security.Claims;
 
-namespace Havit.NewProjectTemplate.Web.Client.Infrastructure.Security;
+namespace MB.HBlazorApp.Web.Client.Infrastructure.Security;
 
 // source: https://github.com/dotnet/blazor-samples/tree/main/8.0/BlazorWebAppOidc
 

@@ -1,8 +1,8 @@
-﻿using Havit.NewProjectTemplate.Model.Common;
+﻿using MB.HBlazorApp.Model.Common;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace Havit.NewProjectTemplate.Entity.Configurations.Common;
+namespace MB.HBlazorApp.Entity.Configurations.Common;
 
 public class CountryConfiguration : IEntityTypeConfiguration<Country>
 {

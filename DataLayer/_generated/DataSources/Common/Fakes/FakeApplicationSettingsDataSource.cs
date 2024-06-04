@@ -9,18 +9,18 @@ using Havit.Data.EntityFrameworkCore.Patterns.DataSources.Fakes;
 using Havit.Data.EntityFrameworkCore.Patterns.SoftDeletes;
 using Havit.Data.Patterns.Attributes;
 
-namespace Havit.NewProjectTemplate.DataLayer.DataSources.Common.Fakes;
+namespace MB.HBlazorApp.DataLayer.DataSources.Common.Fakes;
 
 [Fake]
 [System.CodeDom.Compiler.GeneratedCode("Havit.Data.EntityFrameworkCore.CodeGenerator", "1.0")]
-public class FakeApplicationSettingsDataSource : FakeDataSource<Havit.NewProjectTemplate.Model.Common.ApplicationSettings>, Havit.NewProjectTemplate.DataLayer.DataSources.Common.IApplicationSettingsDataSource
+public class FakeApplicationSettingsDataSource : FakeDataSource<MB.HBlazorApp.Model.Common.ApplicationSettings>, MB.HBlazorApp.DataLayer.DataSources.Common.IApplicationSettingsDataSource
 {
-	public FakeApplicationSettingsDataSource(params Havit.NewProjectTemplate.Model.Common.ApplicationSettings[] data)
-		: this((IEnumerable<Havit.NewProjectTemplate.Model.Common.ApplicationSettings>)data)
+	public FakeApplicationSettingsDataSource(params MB.HBlazorApp.Model.Common.ApplicationSettings[] data)
+		: this((IEnumerable<MB.HBlazorApp.Model.Common.ApplicationSettings>)data)
 	{			
 	}
 
-	public FakeApplicationSettingsDataSource(IEnumerable<Havit.NewProjectTemplate.Model.Common.ApplicationSettings> data, ISoftDeleteManager softDeleteManager = null)
+	public FakeApplicationSettingsDataSource(IEnumerable<MB.HBlazorApp.Model.Common.ApplicationSettings> data, ISoftDeleteManager softDeleteManager = null)
 		: base(data, softDeleteManager)
 	{
 	}

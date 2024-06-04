@@ -1,4 +1,4 @@
-﻿namespace Havit.NewProjectTemplate.Services.Properties;
+﻿namespace MB.HBlazorApp.Services.Properties;
 
 public class AssemblyInfo
 {

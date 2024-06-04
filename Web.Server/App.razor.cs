@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Mvc.ViewFeatures;
 
-namespace Havit.NewProjectTemplate.Web.Server;
+namespace MB.HBlazorApp.Web.Server;
 public partial class App
 {
 	[Inject] protected IFileVersionProvider FileVersionProvider { get; set; }

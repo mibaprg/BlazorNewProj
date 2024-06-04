@@ -1,7 +1,7 @@
 ﻿using Havit.Collections;
 using ProtoBuf;
 
-namespace Havit.NewProjectTemplate.Contracts;
+namespace MB.HBlazorApp.Contracts;
 
 [ProtoContract]
 public class DataFragmentRequest<TFilter>

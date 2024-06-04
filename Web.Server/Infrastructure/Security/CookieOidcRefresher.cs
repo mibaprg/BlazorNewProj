@@ -1,7 +1,7 @@
 ﻿using System.Globalization;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
-using Havit.NewProjectTemplate.Contracts.Infrastructure.Security;
+using MB.HBlazorApp.Contracts.Infrastructure.Security;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication.OpenIdConnect;
@@ -10,7 +10,7 @@ using Microsoft.IdentityModel.JsonWebTokens;
 using Microsoft.IdentityModel.Protocols.OpenIdConnect;
 using Microsoft.IdentityModel.Tokens;
 
-namespace Havit.NewProjectTemplate.Web.Server.Infrastructure.Security;
+namespace MB.HBlazorApp.Web.Server.Infrastructure.Security;
 
 // Source: https://github.com/dotnet/blazor-samples/tree/main/8.0/BlazorWebAppOidc
 

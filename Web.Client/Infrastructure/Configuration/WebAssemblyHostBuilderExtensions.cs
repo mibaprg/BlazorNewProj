@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 
-namespace Havit.NewProjectTemplate.Web.Client.Infrastructure.Configuration;
+namespace MB.HBlazorApp.Web.Client.Infrastructure.Configuration;
 
 public static class WebAssemblyHostBuilderExtensions
 {

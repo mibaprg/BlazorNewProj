@@ -1,19 +1,19 @@
 ﻿using Havit.Data.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
-namespace Havit.NewProjectTemplate.Entity;
+namespace MB.HBlazorApp.Entity;
 
-public class NewProjectTemplateDbContext : Havit.Data.EntityFrameworkCore.DbContext
+public class HBlazorAppDbContext : Havit.Data.EntityFrameworkCore.DbContext
 {
 	/// <summary>
 	/// Constructor for unit tests.
 	/// </summary>
-	internal NewProjectTemplateDbContext()
+	internal HBlazorAppDbContext()
 	{
 		// NOOP
 	}
 
-	public NewProjectTemplateDbContext(DbContextOptions options) : base(options)
+	public HBlazorAppDbContext(DbContextOptions options) : base(options)
 	{
 		// NOOP
 	}
@@ -25,7 +25,7 @@ public class NewProjectTemplateDbContext : Havit.Data.EntityFrameworkCore.DbCont
 
 		// modelBuilder.HasSequence<int>("XySequence");
 
-		modelBuilder.RegisterModelFromAssembly(typeof(Havit.NewProjectTemplate.Model.Localizations.Language).Assembly);
+		modelBuilder.RegisterModelFromAssembly(typeof(MB.HBlazorApp.Model.Localizations.Language).Assembly);
 		modelBuilder.ApplyConfigurationsFromAssembly(this.GetType().Assembly);
 	}
 }

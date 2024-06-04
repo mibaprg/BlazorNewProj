@@ -1,8 +1,8 @@
 ﻿using Havit.Extensions.DependencyInjection.Abstractions;
-using Havit.NewProjectTemplate.Services.Infrastructure;
+using MB.HBlazorApp.Services.Infrastructure;
 using Microsoft.Extensions.Logging;
 
-namespace Havit.NewProjectTemplate.Services.Jobs;
+namespace MB.HBlazorApp.Services.Jobs;
 
 [Service(Profile = ServiceProfiles.JobsRunner)]
 public class EmptyJob : IEmptyJob

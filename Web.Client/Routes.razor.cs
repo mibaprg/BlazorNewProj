@@ -1,8 +1,8 @@
-﻿using Havit.NewProjectTemplate.Contracts.Infrastructure;
-using Havit.NewProjectTemplate.Resources;
+﻿using MB.HBlazorApp.Contracts.Infrastructure;
+using MB.HBlazorApp.Resources;
 using Microsoft.AspNetCore.Components;
 
-namespace Havit.NewProjectTemplate.Web.Client;
+namespace MB.HBlazorApp.Web.Client;
 
 public partial class Routes
 {

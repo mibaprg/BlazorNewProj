@@ -1,7 +1,7 @@
 ﻿using Microsoft.ApplicationInsights.Channel;
 using Microsoft.ApplicationInsights.Extensibility;
 
-namespace Havit.NewProjectTemplate.JobsRunner.Infrastructure.ApplicationInsights;
+namespace MB.HBlazorApp.JobsRunner.Infrastructure.ApplicationInsights;
 
 /// <summary>
 /// Helps distinguish telemetry of hangfire jobs from http requests (both reported as RequestTelemetry)

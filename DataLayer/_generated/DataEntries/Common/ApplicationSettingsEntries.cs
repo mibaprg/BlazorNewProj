@@ -5,16 +5,16 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Havit.NewProjectTemplate.DataLayer.DataEntries.Common;
+namespace MB.HBlazorApp.DataLayer.DataEntries.Common;
 
 [System.CodeDom.Compiler.GeneratedCode("Havit.Data.EntityFrameworkCore.CodeGenerator", "1.0")]
-public class ApplicationSettingsEntries : Havit.Data.Patterns.DataEntries.DataEntries<Havit.NewProjectTemplate.Model.Common.ApplicationSettings>, IApplicationSettingsEntries 
+public class ApplicationSettingsEntries : Havit.Data.Patterns.DataEntries.DataEntries<MB.HBlazorApp.Model.Common.ApplicationSettings>, IApplicationSettingsEntries 
 {
-	private Havit.NewProjectTemplate.Model.Common.ApplicationSettings current;
+	private MB.HBlazorApp.Model.Common.ApplicationSettings current;
 
-	public Havit.NewProjectTemplate.Model.Common.ApplicationSettings Current => current ??= GetEntry(Havit.NewProjectTemplate.Model.Common.ApplicationSettings.Entry.Current);
+	public MB.HBlazorApp.Model.Common.ApplicationSettings Current => current ??= GetEntry(MB.HBlazorApp.Model.Common.ApplicationSettings.Entry.Current);
 
-	public ApplicationSettingsEntries(Havit.NewProjectTemplate.DataLayer.Repositories.Common.IApplicationSettingsRepository repository)
+	public ApplicationSettingsEntries(MB.HBlazorApp.DataLayer.Repositories.Common.IApplicationSettingsRepository repository)
 		: base(repository)
 	{
 	}

@@ -1,9 +1,9 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
 		<TargetFramework>net8.0</TargetFramework>
-		<AssemblyName>Havit.NewProjectTemplate.DataLayer</AssemblyName>
-		<RootNamespace>Havit.NewProjectTemplate.DataLayer</RootNamespace>
+		<AssemblyName>MB.HBlazorApp.DataLayer</AssemblyName>
+		<RootNamespace>MB.HBlazorApp.DataLayer</RootNamespace>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -16,6 +16,17 @@
 		<ProjectReference Include="..\Entity\Entity.csproj" />
 		<ProjectReference Include="..\Model\Model.csproj" />
 		<ProjectReference Include="..\Primitives\Primitives.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <PackageVersion Update="Microsoft.VisualStudio.Threading.Analyzers" Version="17.10.48" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <PackageReference Update="Microsoft.VisualStudio.Threading.Analyzers">
+	    <PrivateAssets>all</PrivateAssets>
+	    <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+	  </PackageReference>
 	</ItemGroup>
 
 </Project>

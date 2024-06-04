@@ -2,27 +2,27 @@
 using Hangfire;
 using Hangfire.Dashboard;
 using Havit.Blazor.Grpc.Server;
-using Havit.NewProjectTemplate.Contracts;
-using Havit.NewProjectTemplate.Contracts.Infrastructure;
-using Havit.NewProjectTemplate.DependencyInjection;
-using Havit.NewProjectTemplate.Facades.Infrastructure.Security;
-using Havit.NewProjectTemplate.Primitives.Security;
-using Havit.NewProjectTemplate.Services.HealthChecks;
-using Havit.NewProjectTemplate.Services.Infrastructure.Security;
-using Havit.NewProjectTemplate.Web.Client.Infrastructure.Configuration;
-using Havit.NewProjectTemplate.Web.Server.Infrastructure.ApplicationInsights;
-using Havit.NewProjectTemplate.Web.Server.Infrastructure.ConfigurationExtensions;
-using Havit.NewProjectTemplate.Web.Server.Infrastructure.ExceptionHandling;
-using Havit.NewProjectTemplate.Web.Server.Infrastructure.HealthChecks;
-using Havit.NewProjectTemplate.Web.Server.Infrastructure.MigrationTool;
-using Havit.NewProjectTemplate.Web.Server.Infrastructure.Security;
+using MB.HBlazorApp.Contracts;
+using MB.HBlazorApp.Contracts.Infrastructure;
+using MB.HBlazorApp.DependencyInjection;
+using MB.HBlazorApp.Facades.Infrastructure.Security;
+using MB.HBlazorApp.Primitives.Security;
+using MB.HBlazorApp.Services.HealthChecks;
+using MB.HBlazorApp.Services.Infrastructure.Security;
+using MB.HBlazorApp.Web.Client.Infrastructure.Configuration;
+using MB.HBlazorApp.Web.Server.Infrastructure.ApplicationInsights;
+using MB.HBlazorApp.Web.Server.Infrastructure.ConfigurationExtensions;
+using MB.HBlazorApp.Web.Server.Infrastructure.ExceptionHandling;
+using MB.HBlazorApp.Web.Server.Infrastructure.HealthChecks;
+using MB.HBlazorApp.Web.Server.Infrastructure.MigrationTool;
+using MB.HBlazorApp.Web.Server.Infrastructure.Security;
 using Microsoft.ApplicationInsights.DependencyCollector;
 using Microsoft.ApplicationInsights.Extensibility;
 using Microsoft.AspNetCore.Authentication.OpenIdConnect;
 using Microsoft.AspNetCore.Components.Authorization;
 using ProtoBuf.Grpc.Server;
 
-namespace Havit.NewProjectTemplate.Web.Server;
+namespace MB.HBlazorApp.Web.Server;
 
 public class Startup
 {
@@ -89,7 +89,7 @@ public class Startup
 		// Health checks
 		TimeSpan defaultHealthCheckTimeout = TimeSpan.FromSeconds(10);
 		services.AddHealthChecks()
-			.AddCheck<NewProjectTemplateDbContextHealthCheck>("Database", timeout: defaultHealthCheckTimeout)
+			.AddCheck<HBlazorAppDbContextHealthCheck>("Database", timeout: defaultHealthCheckTimeout)
 			.AddCheck<MailServiceHealthCheck>("SMTP", timeout: defaultHealthCheckTimeout);
 
 		// Hangfire
@@ -138,7 +138,7 @@ public class Startup
 			endpoints.MapControllers();
 			endpoints.MapRazorComponents<App>()
 				.AddInteractiveWebAssemblyRenderMode()
-				.AddAdditionalAssemblies(typeof(Havit.NewProjectTemplate.Web.Client.Program).Assembly);
+				.AddAdditionalAssemblies(typeof(MB.HBlazorApp.Web.Client.Program).Assembly);
 
 			endpoints.MapGrpcServicesByApiContractAttributes(
 				typeof(IDataSeedFacade).Assembly,
@@ -161,7 +161,7 @@ public class Startup
 				DefaultRecordsPerPage = 50,
 				Authorization = new List<IDashboardAuthorizationFilter>(), // see https://sahansera.dev/securing-hangfire-dashboard-with-endpoint-routing-auth-policy-aspnetcore/
 				DisplayStorageConnectionString = false,
-				DashboardTitle = "NewProjectTemplate - Jobs",
+				DashboardTitle = "HBlazorApp - Jobs",
 				StatsPollingInterval = 60_000, // once a minute
 				DisplayNameFunc = (_, job) => Havit.Hangfire.Extensions.Helpers.JobNameHelper.TryGetSimpleName(job, out string simpleName)
 													? simpleName

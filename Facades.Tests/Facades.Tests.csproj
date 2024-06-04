@@ -1,10 +1,10 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
 		<TargetFramework>net8.0</TargetFramework>
 		<IsPackable>false</IsPackable>
-		<AssemblyName>Havit.NewProjectTemplate.Facades.Tests</AssemblyName>
-		<RootNamespace>Havit.NewProjectTemplate.Facades.Tests</RootNamespace>
+		<AssemblyName>MB.HBlazorApp.Facades.Tests</AssemblyName>
+		<RootNamespace>MB.HBlazorApp.Facades.Tests</RootNamespace>
 		<PublishDir>obj\$(Configuration)\publish</PublishDir>
 		<EnableMSTestRunner>true</EnableMSTestRunner>
 		<OutputType>Exe</OutputType>

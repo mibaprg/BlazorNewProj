@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.Diagnostics.HealthChecks;
 
-namespace Havit.NewProjectTemplate.Services.HealthChecks;
+namespace MB.HBlazorApp.Services.HealthChecks;
 
 public abstract class BaseHealthCheck : IHealthCheck
 {

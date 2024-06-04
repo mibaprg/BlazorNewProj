@@ -1,6 +1,6 @@
-﻿using Havit.NewProjectTemplate.Model.Security;
+﻿using MB.HBlazorApp.Model.Security;
 
-namespace Havit.NewProjectTemplate.DataLayer.Repositories.Security;
+namespace MB.HBlazorApp.DataLayer.Repositories.Security;
 
 public partial interface IUserRepository
 {

@@ -1,4 +1,4 @@
-﻿namespace Havit.NewProjectTemplate.Web.Client;
+﻿namespace MB.HBlazorApp.Web.Client;
 
 public static class NavigationRoutes
 {

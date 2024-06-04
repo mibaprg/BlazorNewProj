@@ -1,11 +1,11 @@
-﻿using Havit.NewProjectTemplate.DependencyInjection;
-using Havit.NewProjectTemplate.Services.Infrastructure.MigrationTool;
+﻿using MB.HBlazorApp.DependencyInjection;
+using MB.HBlazorApp.Services.Infrastructure.MigrationTool;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace Havit.NewProjectTemplate.MigrationTool;
+namespace MB.HBlazorApp.MigrationTool;
 
 public static class Program
 {

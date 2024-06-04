@@ -1,4 +1,4 @@
-﻿namespace Havit.NewProjectTemplate.Web.Client.Resources;
+﻿namespace MB.HBlazorApp.Web.Client.Resources;
 
 /// <summary>
 /// Marker file for RESX source generator.

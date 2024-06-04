@@ -1,10 +1,10 @@
 ﻿using Havit.Data.Patterns.DataSeeds;
-using Havit.NewProjectTemplate.DataLayer.Seeds.Core;
+using MB.HBlazorApp.DataLayer.Seeds.Core;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Microsoft.Extensions.DependencyInjection;
-using Havit.NewProjectTemplate.TestHelpers;
+using MB.HBlazorApp.TestHelpers;
 
-namespace Havit.NewProjectTemplate.IntegrationTests.DataLayer.Seeds;
+namespace MB.HBlazorApp.IntegrationTests.DataLayer.Seeds;
 
 [TestClass]
 public class DataSeedingTests : IntegrationTestBase

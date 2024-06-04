@@ -1,13 +1,13 @@
 ﻿using Havit.Data.EntityFrameworkCore;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
 
-namespace Havit.NewProjectTemplate.Services.HealthChecks;
+namespace MB.HBlazorApp.Services.HealthChecks;
 
-public class NewProjectTemplateDbContextHealthCheck : BaseHealthCheck
+public class HBlazorAppDbContextHealthCheck : BaseHealthCheck
 {
 	private readonly IDbContext _dbContext;
 
-	public NewProjectTemplateDbContextHealthCheck(IDbContext dbContext)
+	public HBlazorAppDbContextHealthCheck(IDbContext dbContext)
 	{
 		_dbContext = dbContext;
 	}

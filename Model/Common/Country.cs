@@ -1,8 +1,8 @@
 ﻿using Havit.Data.EntityFrameworkCore.Attributes;
-using Havit.NewProjectTemplate.Model.Localizations;
+using MB.HBlazorApp.Model.Localizations;
 using System.ComponentModel.DataAnnotations;
 
-namespace Havit.NewProjectTemplate.Model.Common;
+namespace MB.HBlazorApp.Model.Common;
 
 [Cache]
 public class Country : ILocalized<CountryLocalization>

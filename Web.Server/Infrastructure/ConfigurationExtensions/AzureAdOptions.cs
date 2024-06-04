@@ -1,4 +1,4 @@
-﻿namespace Havit.NewProjectTemplate.Web.Server.Infrastructure.ConfigurationExtensions;
+﻿namespace MB.HBlazorApp.Web.Server.Infrastructure.ConfigurationExtensions;
 
 public class AzureAdOptions
 {

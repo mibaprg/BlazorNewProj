@@ -7,9 +7,9 @@
 
 using Havit.Data.Patterns.DataSources;
 
-namespace Havit.NewProjectTemplate.DataLayer.DataSources.Security;
+namespace MB.HBlazorApp.DataLayer.DataSources.Security;
 
 [System.CodeDom.Compiler.GeneratedCode("Havit.Data.EntityFrameworkCore.CodeGenerator", "1.0")]
-public interface IRoleDataSource : IDataSource<Havit.NewProjectTemplate.Model.Security.Role>
+public interface IRoleDataSource : IDataSource<MB.HBlazorApp.Model.Security.Role>
 {
 }

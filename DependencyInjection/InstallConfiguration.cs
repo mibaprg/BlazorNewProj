@@ -1,4 +1,4 @@
-﻿namespace Havit.NewProjectTemplate.DependencyInjection;
+﻿namespace MB.HBlazorApp.DependencyInjection;
 
 internal class InstallConfiguration
 {

@@ -1,8 +1,8 @@
-﻿using Havit.NewProjectTemplate.Contracts;
-using Havit.NewProjectTemplate.Contracts.Infrastructure;
+﻿using MB.HBlazorApp.Contracts;
+using MB.HBlazorApp.Contracts.Infrastructure;
 using Microsoft.AspNetCore.Components;
 
-namespace Havit.NewProjectTemplate.Web.Client.Pages.Admin.Components;
+namespace MB.HBlazorApp.Web.Client.Pages.Admin.Components;
 
 public partial class DataSeeds : ComponentBase
 {

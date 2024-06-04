@@ -1,7 +1,7 @@
 ﻿using System.Security.Claims;
-using Havit.NewProjectTemplate.Model.Security;
+using MB.HBlazorApp.Model.Security;
 
-namespace Havit.NewProjectTemplate.Services.Infrastructure.Security;
+namespace MB.HBlazorApp.Services.Infrastructure.Security;
 
 public interface IApplicationAuthenticationService
 {

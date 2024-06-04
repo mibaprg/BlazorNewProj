@@ -1,6 +1,6 @@
 ﻿using System.Security.Claims;
 
-namespace Havit.NewProjectTemplate.Facades.Infrastructure.Security.Claims;
+namespace MB.HBlazorApp.Facades.Infrastructure.Security.Claims;
 
 public interface ICustomClaimsBuilder
 {

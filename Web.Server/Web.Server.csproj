@@ -1,11 +1,36 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
 	<PropertyGroup>
 		<TargetFramework>net8.0</TargetFramework>
 		<DisableImplicitComponentsAnalyzers>true</DisableImplicitComponentsAnalyzers>
-		<AssemblyName>Havit.NewProjectTemplate.Web.Server</AssemblyName>
-		<RootNamespace>Havit.NewProjectTemplate.Web.Server</RootNamespace>
+		<AssemblyName>MB.HBlazorApp.Web.Server</AssemblyName>
+		<RootNamespace>MB.HBlazorApp.Web.Server</RootNamespace>
 	</PropertyGroup>
+
+	<ItemGroup>
+		<Content Remove="appsettings.WebServer.Debug.json" />
+		<Content Remove="appsettings.WebServer.Release.json" />
+		<Content Remove="appsettings.WebServer.TfsPublish.json" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="appsettings.WebServer.Debug.json">
+			<IsTransformFile>true</IsTransformFile>
+			<DependentUpon>appsettings.WebServer.json</DependentUpon>
+		</None>
+		<None Include="appsettings.WebServer.Debug.local.json">
+			<IsTransformFile>true</IsTransformFile>
+			<DependentUpon>appsettings.WebServer.json</DependentUpon>
+		</None>
+		<None Include="appsettings.WebServer.Release.json">
+			<IsTransformFile>true</IsTransformFile>
+			<DependentUpon>appsettings.WebServer.json</DependentUpon>
+		</None>
+		<None Include="appsettings.WebServer.TfsPublish.json">
+			<IsTransformFile>true</IsTransformFile>
+			<DependentUpon>appsettings.WebServer.json</DependentUpon>
+		</None>
+	</ItemGroup>
 
 	<ItemGroup>
 		<PackageReference Include="Hangfire" />
@@ -25,6 +50,10 @@
 		</PackageReference>
 		<PackageReference Include="Microsoft.Extensions.DependencyInjection" />
 		<PackageReference Include="Microsoft.Extensions.Logging.AzureAppServices" />
+		<PackageReference Include="Microsoft.VisualStudio.SlowCheetah">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
 		<PackageReference Include="protobuf-net.Grpc.AspNetCore.Reflection" />
 	</ItemGroup>
 
@@ -47,7 +76,7 @@
 	</Target>
 
 	<Target Name="EnsureWebJobInPackage" AfterTargets="CreateReadyToRunImages" BeforeTargets="_PrepareForReadyToRunCompilation">
-		<Error Text="WebJob file Havit.NewProjectTemplate.JobsRunner.exe not found when preparing web deploy package." Condition="!Exists('..\JobsRunner\bin\Release\net8.0\Havit.NewProjectTemplate.JobsRunner.exe')" />
+		<Error Text="WebJob file MB.HBlazorApp.JobsRunner.exe not found when preparing web deploy package." Condition="!Exists('..\JobsRunner\bin\Release\net8.0\MB.HBlazorApp.JobsRunner.exe')" />
 		<ItemGroup>
 			<!-- Pick files for publish. Assumes that JobsRunner is referenced by Web.Server in SLN. -->
 			<WebJobFiles Include="..\JobsRunner\bin\Release\net8.0\**" />
@@ -58,4 +87,21 @@
 			</ResolvedFileToPublish>
 		</ItemGroup>
 	</Target>
+
+	<ItemGroup>
+		<Content Update="appsettings.WebServer.json">
+			<TransformOnBuild>true</TransformOnBuild>
+		</Content>
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageVersion Update="Microsoft.VisualStudio.Threading.Analyzers" Version="17.10.48" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Update="Microsoft.VisualStudio.Threading.Analyzers">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+		</PackageReference>
+	</ItemGroup>
 </Project>

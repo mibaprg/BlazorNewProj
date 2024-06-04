@@ -1,4 +1,4 @@
-﻿namespace Havit.NewProjectTemplate.Primitives.Security;
+﻿namespace MB.HBlazorApp.Primitives.Security;
 public enum RoleEntry
 {
 	SystemAdministrator = -1,

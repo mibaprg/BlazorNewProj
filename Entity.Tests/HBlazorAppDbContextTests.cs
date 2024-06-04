@@ -1,19 +1,19 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace Havit.NewProjectTemplate.Entity.Tests;
+namespace MB.HBlazorApp.Entity.Tests;
 
 [TestClass]
-public class NewProjectTemplateDbContextTests
+public class HBlazorAppDbContextTests
 {
 	[TestMethod]
-	public void NewProjectTemplateDbContext_CheckModelConventions()
+	public void HBlazorAppDbContext_CheckModelConventions()
 	{
 		// Arrange
-		DbContextOptions<NewProjectTemplateDbContext> options = new DbContextOptionsBuilder<NewProjectTemplateDbContext>()
-			.UseInMemoryDatabase(nameof(NewProjectTemplateDbContext))
+		DbContextOptions<HBlazorAppDbContext> options = new DbContextOptionsBuilder<HBlazorAppDbContext>()
+			.UseInMemoryDatabase(nameof(HBlazorAppDbContext))
 			.Options;
-		NewProjectTemplateDbContext dbContext = new NewProjectTemplateDbContext(options);
+		HBlazorAppDbContext dbContext = new HBlazorAppDbContext(options);
 
 		// Act
 		Havit.Data.EntityFrameworkCore.ModelValidation.ModelValidator modelValidator = new Havit.Data.EntityFrameworkCore.ModelValidation.ModelValidator();

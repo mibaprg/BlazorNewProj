@@ -5,18 +5,18 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Havit.NewProjectTemplate.DataLayer.DataEntries.Localizations;
+namespace MB.HBlazorApp.DataLayer.DataEntries.Localizations;
 
 [System.CodeDom.Compiler.GeneratedCode("Havit.Data.EntityFrameworkCore.CodeGenerator", "1.0")]
-public class LanguageEntries : Havit.Data.Patterns.DataEntries.DataEntries<Havit.NewProjectTemplate.Model.Localizations.Language>, ILanguageEntries 
+public class LanguageEntries : Havit.Data.Patterns.DataEntries.DataEntries<MB.HBlazorApp.Model.Localizations.Language>, ILanguageEntries 
 {
-	private Havit.NewProjectTemplate.Model.Localizations.Language czech;
-	private Havit.NewProjectTemplate.Model.Localizations.Language english;
+	private MB.HBlazorApp.Model.Localizations.Language czech;
+	private MB.HBlazorApp.Model.Localizations.Language english;
 
-	public Havit.NewProjectTemplate.Model.Localizations.Language Czech => czech ??= GetEntry(Havit.NewProjectTemplate.Model.Localizations.Language.Entry.Czech);
-	public Havit.NewProjectTemplate.Model.Localizations.Language English => english ??= GetEntry(Havit.NewProjectTemplate.Model.Localizations.Language.Entry.English);
+	public MB.HBlazorApp.Model.Localizations.Language Czech => czech ??= GetEntry(MB.HBlazorApp.Model.Localizations.Language.Entry.Czech);
+	public MB.HBlazorApp.Model.Localizations.Language English => english ??= GetEntry(MB.HBlazorApp.Model.Localizations.Language.Entry.English);
 
-	public LanguageEntries(Havit.NewProjectTemplate.DataLayer.Repositories.Localizations.ILanguageRepository repository)
+	public LanguageEntries(MB.HBlazorApp.DataLayer.Repositories.Localizations.ILanguageRepository repository)
 		: base(repository)
 	{
 	}

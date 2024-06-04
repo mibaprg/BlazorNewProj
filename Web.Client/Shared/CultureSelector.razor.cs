@@ -1,7 +1,7 @@
 ﻿using Blazored.LocalStorage;
 using Microsoft.AspNetCore.Components;
 
-namespace Havit.NewProjectTemplate.Web.Client.Shared;
+namespace MB.HBlazorApp.Web.Client.Shared;
 
 public partial class CultureSelector : ComponentBase
 {

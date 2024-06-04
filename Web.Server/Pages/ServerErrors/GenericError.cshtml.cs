@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace Havit.NewProjectTemplate.Web.Server.Pages.ServerErrors;
+namespace MB.HBlazorApp.Web.Server.Pages.ServerErrors;
 
 [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
 [IgnoreAntiforgeryToken]

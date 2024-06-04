@@ -7,7 +7,7 @@
     <ErrorBoundary @ref="_errorBoundaryComponent">
         <ErrorContent Context="exception">
             <div class="main p-4 flex-grow-1">
-                <Havit.NewProjectTemplate.Web.Client.Pages.Errors.GenericError Exception="exception" OnRecover="() => _errorBoundaryComponent?.Recover()" />
+                <MB.HBlazorApp.Web.Client.Pages.Errors.GenericError Exception="exception" OnRecover="() => _errorBoundaryComponent?.Recover()" />
             </div>
         </ErrorContent>
         <ChildContent>

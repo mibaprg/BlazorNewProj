@@ -1,10 +1,10 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
 		<TargetFramework>net8.0</TargetFramework>
 		<IsPackable>false</IsPackable>
-		<AssemblyName>Havit.NewProjectTemplate.TestsForLocalDebugging</AssemblyName>
-		<RootNamespace>Havit.NewProjectTemplate.TestsForLocalDebugging</RootNamespace>
+		<AssemblyName>MB.HBlazorApp.TestsForLocalDebugging</AssemblyName>
+		<RootNamespace>MB.HBlazorApp.TestsForLocalDebugging</RootNamespace>
 		<!-- Route the publish folder outside of the bin folder to avoid running unit tests twice (from bin\Release\netcoreapp and bin\Release\netcoreapp\publish) -->
 		<PublishDir>obj\$(Configuration)\publish</PublishDir>
 		<EnableMSTestRunner>true</EnableMSTestRunner>
@@ -29,6 +29,17 @@
 		<None Update="appsettings.json">
 			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 		</None>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <PackageVersion Update="Microsoft.VisualStudio.Threading.Analyzers" Version="17.10.48" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <PackageReference Update="Microsoft.VisualStudio.Threading.Analyzers">
+	    <PrivateAssets>all</PrivateAssets>
+	    <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+	  </PackageReference>
 	</ItemGroup>
 
 </Project>

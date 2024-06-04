@@ -1,7 +1,7 @@
 ﻿
-using Havit.NewProjectTemplate.Model.Common;
+using MB.HBlazorApp.Model.Common;
 
-namespace Havit.NewProjectTemplate.DataLayer.Repositories.Common;
+namespace MB.HBlazorApp.DataLayer.Repositories.Common;
 
 public interface ICountryByIsoCodeLookupService
 {

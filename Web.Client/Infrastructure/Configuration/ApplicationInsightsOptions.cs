@@ -1,4 +1,4 @@
-﻿namespace Havit.NewProjectTemplate.Web.Client.Infrastructure.Configuration;
+﻿namespace MB.HBlazorApp.Web.Client.Infrastructure.Configuration;
 
 public class ApplicationInsightsOptions
 {

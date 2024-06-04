@@ -1,4 +1,4 @@
-﻿namespace Havit.NewProjectTemplate.DataLayer.Repositories.Localizations;
+﻿namespace MB.HBlazorApp.DataLayer.Repositories.Localizations;
 
 public partial class LanguageDbRepository : ILanguageRepository
 {

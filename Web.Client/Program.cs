@@ -5,15 +5,15 @@ using Blazored.LocalStorage;
 using FluentValidation;
 using Havit.Blazor.Grpc.Client;
 using Havit.Blazor.Grpc.Client.ServerExceptions;
-using Havit.NewProjectTemplate.Contracts;
-using Havit.NewProjectTemplate.Contracts.Infrastructure;
-using Havit.NewProjectTemplate.Web.Client.Infrastructure.Configuration;
-using Havit.NewProjectTemplate.Web.Client.Infrastructure.Grpc;
-using Havit.NewProjectTemplate.Web.Client.Infrastructure.Security;
+using MB.HBlazorApp.Contracts;
+using MB.HBlazorApp.Contracts.Infrastructure;
+using MB.HBlazorApp.Web.Client.Infrastructure.Configuration;
+using MB.HBlazorApp.Web.Client.Infrastructure.Grpc;
+using MB.HBlazorApp.Web.Client.Infrastructure.Security;
 using Microsoft.AspNetCore.Components.Authorization;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 
-namespace Havit.NewProjectTemplate.Web.Client;
+namespace MB.HBlazorApp.Web.Client;
 
 public static class Program
 {
@@ -36,8 +36,8 @@ public static class Program
 		builder.Services.AddHxServices();
 		builder.Services.AddHxMessenger();
 		builder.Services.AddHxMessageBoxHost();
-		Havit.NewProjectTemplate.Web.Client.Resources.ResourcesServiceCollectionInstaller.AddGeneratedResourceWrappers(builder.Services);
-		Havit.NewProjectTemplate.Resources.ResourcesServiceCollectionInstaller.AddGeneratedResourceWrappers(builder.Services);
+		MB.HBlazorApp.Web.Client.Resources.ResourcesServiceCollectionInstaller.AddGeneratedResourceWrappers(builder.Services);
+		MB.HBlazorApp.Resources.ResourcesServiceCollectionInstaller.AddGeneratedResourceWrappers(builder.Services);
 		SetHxComponents();
 
 		AddGrpcClient(builder);

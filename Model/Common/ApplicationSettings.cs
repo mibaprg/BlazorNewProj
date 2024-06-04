@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Havit.NewProjectTemplate.Model.Common;
+namespace MB.HBlazorApp.Model.Common;
 
 public class ApplicationSettings
 {

@@ -1,7 +1,7 @@
 ﻿using System.Net;
 using System.Security;
 
-namespace Havit.NewProjectTemplate.Web.Server.Infrastructure.ExceptionHandling;
+namespace MB.HBlazorApp.Web.Server.Infrastructure.ExceptionHandling;
 
 public class CustomResponseForKnownExceptionsMiddleware
 {

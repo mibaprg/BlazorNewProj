@@ -1,7 +1,7 @@
 ﻿using Azure.Identity;
 using Microsoft.Extensions.Configuration;
 
-namespace Havit.NewProjectTemplate.DependencyInjection.Configuration;
+namespace MB.HBlazorApp.DependencyInjection.Configuration;
 
 /// <summary>
 /// Sets up Azure KeyVault as a configuration provider.

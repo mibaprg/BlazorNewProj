@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Components.Authorization;
 using System.Security.Claims;
 
-namespace Havit.NewProjectTemplate.Web.Client.Infrastructure.Security;
+namespace MB.HBlazorApp.Web.Client.Infrastructure.Security;
 
 // zdroj: https://github.com/dotnet/blazor-samples/tree/main/8.0/BlazorWebAppOidc
 

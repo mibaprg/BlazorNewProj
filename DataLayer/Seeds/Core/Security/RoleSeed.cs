@@ -1,8 +1,8 @@
 ﻿using Havit.Data.Patterns.DataSeeds;
-using Havit.NewProjectTemplate.Model.Security;
-using Havit.NewProjectTemplate.Primitives.Security;
+using MB.HBlazorApp.Model.Security;
+using MB.HBlazorApp.Primitives.Security;
 
-namespace Havit.NewProjectTemplate.DataLayer.Seeds.Core.Security;
+namespace MB.HBlazorApp.DataLayer.Seeds.Core.Security;
 
 public class RoleSeed : DataSeed<CoreProfile>
 {

@@ -1,7 +1,7 @@
-﻿using Havit.NewProjectTemplate.Model.Common;
+﻿using MB.HBlazorApp.Model.Common;
 using Havit.Data.Patterns.DataSeeds;
 
-namespace Havit.NewProjectTemplate.DataLayer.Seeds.Core.Common;
+namespace MB.HBlazorApp.DataLayer.Seeds.Core.Common;
 
 public class ApplicationSettingsSeed : DataSeed<CoreProfile>
 {

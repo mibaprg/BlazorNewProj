@@ -1,4 +1,4 @@
-﻿namespace Havit.NewProjectTemplate.Facades.Properties;
+﻿namespace MB.HBlazorApp.Facades.Properties;
 
 public class AssemblyInfo
 {
